@@ -1,0 +1,64 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confidential Email</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="email">
+    <div id="confidential">CONFIDENTIAL</div>
+    <div id="top-secret">TOP SECRET</div>
+    <p>This is a <span class="blurred">confidential</span> email with <span class="blurred">sensitive</span> information.</p>
+    <p>Remember to <span class="blurred">encrypt</span> the content before sharing.</p>
+    <p>Failure to follow security protocols can lead to <span class="blurred">serious consequences</span>.</p>
+  </main>
+</body>
+</html>
+
+
+** end of index.html **
+
+** start of styles.css **
+
+/* Apply styles to the main email container */
+#email {
+  padding: 50px;
+  margin-top: 50px;
+  width: 500px;
+  border: 2px solid #000;
+  box-sizing: border-box;
+}
+
+/* Style for confidential and top-secret divs */
+#confidential, #top-secret {
+  display: inline-block;
+  padding: 10px;
+  margin-left: 15px;
+  border: 1px solid #000;
+  transform: rotate(-15deg); /* Rotation effect for both */
+}
+
+/* Style for confidential text */
+#confidential {
+  background-color: lightcoral;
+  color: white;
+}
+
+/* Style for top-secret text */
+#top-secret {
+  background-color: lightblue;
+  color: black;
+}
+
+/* Blur effect for elements with class 'blurred' */
+.blurred {
+  filter: blur(3px);
+}
+
+
+** end of styles.css **
+
